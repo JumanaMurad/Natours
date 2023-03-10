@@ -70,6 +70,8 @@ exports.getAllTours = async (req, res) => {
         query = query.select('-__v'); // Here I execlude the __v
     }
 
+    // 4) Pagination
+
     // EXECUTE A QUERYquey
     const tours = await query;
 
