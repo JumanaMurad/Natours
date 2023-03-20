@@ -51,7 +51,7 @@ exports.getAllTours = async (req, res) => {
     // .where('difficulty')
     // .equals("easy");
 
-    let query = Tour;
+    let query = Tour.find();
 
     // 2) Sorting
     if (req.query.sort) {
@@ -64,7 +64,7 @@ exports.getAllTours = async (req, res) => {
 
     // 3) Field Limiting
     if(req.query.fields) {
-        const fields = req.query.fields.split(',').join(' ');
+        const fields = req.query.fields.split(',').join('');
         query = query.select(fields);
     } else{
         query = query.select('-__v'); // Here I execlude the 

@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=PRODUCTION nodemon server.js"
+    "start:prod": "NODE_ENV=PRODUCTION nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Jumana Murad",
   "license": "ISC",
@@ -15,7 +16,9 @@
     "fs": "^0.0.1-security",
     "mongoose": "^5.13.16",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.20"
+    "ndb": "^1.1.5",
+    "nodemon": "^2.0.20",
+    "validator": "^13.9.0"
   },
   "devDependencies": {
     "eslint": "^8.35.0",

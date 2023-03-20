@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+const User = require('../models/userModel');
 const users = JSON.parse(fs.readFileSync(`${__dirname}/../dev-data/data/users.json`));
 
 //ROUTER HANDELERS
